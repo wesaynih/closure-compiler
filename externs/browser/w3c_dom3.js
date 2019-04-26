@@ -261,7 +261,7 @@ Document.prototype.renameNode = function(n, namespaceURI, qualifiedName) {};
 Node.prototype.baseURI;
 
 /**
- * @type {string}
+ * @type {?string}
  * @see http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-NodeNSLocalN
  */
 Node.prototype.localName;
@@ -446,10 +446,22 @@ Attr.prototype.ownerElement;
 Attr.prototype.isId;
 
 /**
+ * @type {string}
+ * @see http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-NodeNSLocalN
+ */
+Attr.prototype.localName;
+
+/**
  * @type {TypeInfo}
  * @see http://www.w3.org/TR/DOM-Level-3-Core/core.html#Attr-schemaTypeInfo
  */
 Attr.prototype.schemaTypeInfo;
+
+/**
+ * @type {string}
+ * @see http://www.w3.org/TR/DOM-Level-3-Core/core.html#ID-NodeNSLocalN
+ */
+Element.prototype.localName;
 
 /**
  * @type {TypeInfo}
