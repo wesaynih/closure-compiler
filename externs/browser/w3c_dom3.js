@@ -149,7 +149,7 @@ function DOMImplementationSource() {}
  * @param {?string} namespaceURI
  * @param {string} publicId
  * @param {DocumentType} doctype
- * @return {Document}
+ * @return {!Document}
  * @see http://www.w3.org/TR/DOM-Level-3-Core/core.html#Level-2-Core-DOM-createDocument
  * @nosideeffects
  */
