@@ -218,6 +218,7 @@ MediaKeySession.prototype.remove = function() {};
 
 /**
  * @override
+ * @suppress {checkTypes}
  */
 MediaKeySession.prototype.addEventListener = function(
     type, listener, opt_options) {};
@@ -225,6 +226,7 @@ MediaKeySession.prototype.addEventListener = function(
 
 /**
  * @override
+ * @suppress {checkTypes}
  */
 MediaKeySession.prototype.removeEventListener = function(
     type, listener, opt_options) {};

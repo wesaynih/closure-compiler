@@ -2177,11 +2177,17 @@ MediaQueryList.prototype.addListener = function(listener) {};
  */
 MediaQueryList.prototype.removeListener = function(listener) {};
 
-/** @override Not available in some browsers; use addListener instead. */
+/**
+ * @override Not available in some browsers; use addListener instead.
+ * @suppress {checkTypes}
+ */
 MediaQueryList.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override Not available in old browsers; use removeListener instead. */
+/**
+ * @override Not available in old browsers; use removeListener instead.
+ * @suppress {checkTypes}
+ */
 MediaQueryList.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 

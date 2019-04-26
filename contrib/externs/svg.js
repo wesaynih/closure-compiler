@@ -417,13 +417,15 @@ SVGElementInstance.prototype.onunload;
 
 /**
  * @override
+ * @suppress {checkTypes}
  */
 SVGElementInstance.prototype.addEventListener = function(type, listener, opt_useCapture){};
 
 
 /**
  * @override
- */
+ * @suppress {checkTypes}
+*/
 SVGElementInstance.prototype.removeEventListener = function(type, listener, opt_useCapture){};
 
 

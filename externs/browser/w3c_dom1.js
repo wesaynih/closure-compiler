@@ -119,10 +119,16 @@ DOMImplementation.prototype.hasFeature = function(feature, version) {};
  */
 function Node() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Node.prototype.addEventListener = function(type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Node.prototype.removeEventListener = function(type, listener, opt_options) {};
 
 /** @override */
@@ -877,10 +883,16 @@ ProcessingInstruction.prototype.target;
 function Window() {}
 Window.prototype.Window;
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Window.prototype.addEventListener = function(type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Window.prototype.removeEventListener = function(type, listener, opt_options) {};
 
 /** @override */

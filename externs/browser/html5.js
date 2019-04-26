@@ -115,11 +115,17 @@ HTMLCanvasElement.prototype.captureStream = function(opt_framerate) {};
  */
 function OffscreenCanvas(width, height) {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 OffscreenCanvas.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 OffscreenCanvas.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -1158,11 +1164,17 @@ Document.prototype.readyState;
  */
 function DOMApplicationCache() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 DOMApplicationCache.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 DOMApplicationCache.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -1300,10 +1312,16 @@ function importScripts(var_args) {}
  */
 function WebWorker() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 WebWorker.prototype.addEventListener = function(type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 WebWorker.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -1344,10 +1362,16 @@ WebWorker.prototype.onerror;
  */
 function Worker(scriptURL, opt_options) {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Worker.prototype.addEventListener = function(type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 Worker.prototype.removeEventListener = function(type, listener, opt_options) {};
 
 /** @override */
@@ -1421,11 +1445,17 @@ WorkerOptions.prototype.type;
  */
 function SharedWorker(scriptURL, opt_name) {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 SharedWorker.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 SharedWorker.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -2146,14 +2176,20 @@ TextTrack.prototype.cues;
  */
 TextTrack.prototype.mode;
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 TextTrack.prototype.addEventListener = function(
     type, listener, opt_useCapture) {};
 
 /** @override */
 TextTrack.prototype.dispatchEvent = function(evt) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 TextTrack.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -2441,11 +2477,17 @@ MessageChannel.prototype.port2;
  */
 function MessagePort() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 MessagePort.prototype.addEventListener = function(type, listener, opt_options) {
 };
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 MessagePort.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -2658,14 +2700,20 @@ BroadcastChannel.prototype.postMessage = function(message) {};
  */
 BroadcastChannel.prototype.close = function() {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 BroadcastChannel.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
 /** @override */
 BroadcastChannel.prototype.dispatchEvent = function(evt) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 BroadcastChannel.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -3025,10 +3073,16 @@ WebSocket.CLOSED;
  */
 WebSocket.prototype.CLOSED;
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 WebSocket.prototype.addEventListener = function(type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 WebSocket.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -3331,11 +3385,17 @@ XMLHttpRequest.prototype.mozResponseArrayBuffer;
  */
 function XMLHttpRequestEventTarget() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 XMLHttpRequestEventTarget.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 XMLHttpRequestEventTarget.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -5076,11 +5136,17 @@ VisualViewport.prototype.height;
 /** @type {number} */
 VisualViewport.prototype.scale;
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 VisualViewport.prototype.addEventListener = function(type, listener,
     opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 VisualViewport.prototype.removeEventListener = function(type, listener,
     opt_options) {};
 

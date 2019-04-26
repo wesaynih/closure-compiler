@@ -283,12 +283,14 @@ function AudioNode() {}
 
 /**
  * @override
+ * @suppress {checkTypes}
  */
 AudioNode.prototype.addEventListener = function(type, listener,
     opt_useCapture) {};
 
 /**
  * @override
+ * @suppress {checkTypes}
  */
 AudioNode.prototype.removeEventListener = function(type, listener,
     opt_useCapture) {};

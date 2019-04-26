@@ -27,11 +27,17 @@
  */
 function MediaSource() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 MediaSource.prototype.addEventListener = function(type, listener, opt_options) {
 };
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 MediaSource.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
@@ -94,11 +100,17 @@ MediaSource.isTypeSupported = function(type) {};
  */
 function SourceBuffer() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 SourceBuffer.prototype.addEventListener = function(
     type, listener, opt_options) {};
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 SourceBuffer.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 

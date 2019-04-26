@@ -494,11 +494,17 @@ FileError.prototype.code;
  */
 function FileReader() {}
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 FileReader.prototype.addEventListener = function(type, listener, opt_options) {
 };
 
-/** @override */
+/**
+ * @override
+ * @suppress {checkTypes}
+ */
 FileReader.prototype.removeEventListener = function(
     type, listener, opt_options) {};
 
