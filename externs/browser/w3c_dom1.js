@@ -177,7 +177,7 @@ Node.prototype.nodeValue;
 Node.prototype.nodeType;
 
 /**
- * @type {Document}
+ * @type {?Document}
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#attribute-ownerDocument
  */
 Node.prototype.ownerDocument;
@@ -319,6 +319,11 @@ Node.NOTATION_NODE;
 function DocumentFragment() {}
 
 /**
+ * @type {!Document}
+ */
+DocumentFragment.prototype.ownerDocument;
+
+/**
  * @constructor
  * @extends {Node}
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#i-Document
@@ -342,6 +347,11 @@ Document.prototype.documentElement;
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#attribute-implementation
  */
 Document.prototype.implementation;
+
+/**
+ * @type {null}
+ */
+Document.prototype.ownerDocument;
 
 /**
  * @param {string} name
@@ -519,6 +529,11 @@ CharacterData.prototype.data;
 CharacterData.prototype.length;
 
 /**
+ * @type {!Document}
+ */
+CharacterData.prototype.ownerDocument;
+
+/**
  * @param {string} arg
  * @return {undefined}
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#ID-32791A2F
@@ -573,6 +588,11 @@ function Attr() {}
 Attr.prototype.name;
 
 /**
+ * @type {!Document}
+ */
+Attr.prototype.ownerDocument;
+
+/**
  * @type {boolean}
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#ID-862529273
  */
@@ -604,6 +624,11 @@ Element.prototype.attributes;
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#attribute-tagName
  */
 Element.prototype.tagName;
+
+/**
+ * @type {!Document}
+ */
+Element.prototype.ownerDocument;
 
 /**
  * @implicitCast
@@ -832,6 +857,11 @@ function ProcessingInstruction() {}
  * @see http://www.w3.org/TR/1998/REC-DOM-Level-1-19981001/level-one-core.html#ID-837822393
  */
 ProcessingInstruction.prototype.data;
+
+/**
+ * @type {!Document}
+ */
+ProcessingInstruction.prototype.ownerDocument;
 
 /**
  * @type {string}
